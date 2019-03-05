@@ -14,7 +14,7 @@ from fnc.extractFeature import extractFeature
 parser = argparse.ArgumentParser()
 
 parser.add_argument("--file", type=str,
-                    help="Path to the file that you want to verify.")
+                    help="/home/aju/Iris-Recognition/CASIA1/")
 
 parser.add_argument("--temp_dir", type=str, default="./templates/temp/",
 					help="Path to the directory containing templates.")
@@ -26,7 +26,12 @@ args = parser.parse_args()
 ##  Execution
 ##-----------------------------------------------------------------------------
 start = time()
-args.file = "../CASIA1/001_1_1.jpg"
+#args.file = "../CASIA1/001_1_1.jpg"
+
+# Check the existence of temp_dir
+if not os.path.exists(args.temp_dir):
+	print("makedirs", args.temp_dir)
+	os.makedirs(args.temp_dir)
 
 # Extract feature
 print('>>> Enroll for the file ', args.file)

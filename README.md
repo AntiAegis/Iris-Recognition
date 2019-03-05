@@ -153,7 +153,7 @@ workon cv
 ```
 * To register the whole of 108 people in the CASIA database:
 ```
-python3 enroll-all.py
+python3 enroll-casia1.py
 ```
 
 <p align="center">
@@ -162,7 +162,7 @@ python3 enroll-all.py
 
 * To register a specific person:
 ```
-python3 enroll-single.py 099_1_3.jpg
+python3 enroll-single.py --file 099_1_3.jpg
 ```
 
 <p align="center">
@@ -171,7 +171,7 @@ python3 enroll-single.py 099_1_3.jpg
 
 * To verify a specific person:
 ```
-python3 verify.py 008_2_2.jpg
+python3 verify.py --file 008_2_2.jpg
 ```
 
 <p align="center">

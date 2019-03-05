@@ -14,10 +14,10 @@ from fnc.matching import matching
 parser = argparse.ArgumentParser()
 
 parser.add_argument("--file", type=str,
-                    help="Path to the file that you want to verify.")
+                    help="../CASIA1/")
 
-parser.add_argument("--temp_dir", type=str, default="./templates/",
-					help="Path to the directory containing templates.")
+parser.add_argument("--temp_dir", type=str, default="./templates/CASIA1/",
+					help="./templates/CASIA1/")
 
 parser.add_argument("--thres", type=float, default=0.38,
 					help="Threshold for matching.")
